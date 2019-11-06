@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_weight="0.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_weight="0.25"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:background="@mipmap/user"
+            android:layout_weight="0.5"
+            android:layout_width="200dp"
+            android:layout_height="0dp">
+
+        </ImageView>
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:drawableStart="@mipmap/user"
+        android:hint="@string/user"
+        app:met_textColorHint="@color/blackazul"
+        android:textColorHint="@color/blackazul"
+        app:met_floatingLabel="highlight"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </com.rengwuxian.materialedittext.MaterialEditText>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:drawableStart="@mipmap/padlock"
+        android:hint="@string/pass"
+        app:met_textColorHint="@color/blackazul"
+        android:textColorHint="@color/blackazul"
+        app:met_floatingLabel="highlight"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </com.rengwuxian.materialedittext.MaterialEditText>
+
+    <Button
+        android:text="@string/login"
+        android:background="@drawable/button_redondeado"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="0.07"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </Button>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/textLogin"
+        android:textColor="@color/blackazul"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </TextView>
+</LinearLayout>
